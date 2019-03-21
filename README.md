@@ -32,13 +32,15 @@ Feel free to go further and explore what IMB Watson is capable of. It also has m
 
 ## Useful API's
 
+- [Twitter](https://developer.twitter.com/) (if you are lucky enough to get API keys!)
 - [They Work For You](https://www.theyworkforyou.com/api/)
 - [Google Books](https://developers.google.com/books/docs/overview)
 - [News Api](https://newsapi.org/)
 - [Trivia](http://jservice.io/)
 - [Marvel Comics](https://developer.marvel.com/)
-- [Good Reads book reviews](https://www.goodreads.com/api)
 - [Twilio](https://www.twilio.com/)
+
+Or, check out this [list](https://github.com/toddmotto/public-apis) of free APIs but make sure that you choose one that requires no auth _or_ just an api key.
 
 ## Some ideas for further development
 
