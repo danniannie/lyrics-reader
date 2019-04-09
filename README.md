@@ -14,7 +14,9 @@
 
 ### Morning
 
-1. Sign up to [IBM Watson's](https://console.bluemix.net/) API. Create a free trial account with IBM Bluemix. Spend some time reading about how they work -> [IBM Docs](https://console.bluemix.net/catalog/?search=label:lite&category=ai)
+1. Sign up to [IBM Watson's](https://console.bluemix.net/) API. Create a free trial account with IBM Bluemix. Spend some time learning about how they work -> 
+- [How does IBM Watson work? - Youtube](https://www.youtube.com/watch?v=r7E1TJ1HtM0)
+- [IBM Docs](https://console.bluemix.net/catalog/?search=label:lite&category=ai)
 
 2. Use the npm package [watson-developer-cloud](https://www.npmjs.com/package/watson-developer-cloud) to connect to IBM Watson's [tone analyser service](https://console.bluemix.net/catalog/services/tone-analyzer) (_**or whichever module you choose to use!**_). 
 
