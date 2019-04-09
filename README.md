@@ -1,4 +1,4 @@
-# Emotional Tweets
+# Emotional APIs
 
 ## Goals
 
