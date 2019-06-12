@@ -1,0 +1,28 @@
+{
+  "name": "bend-emotional-apis",
+  "version": "1.0.0",
+  "description": "## Goals",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon listen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danniannie/bend-emotional-apis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danniannie/bend-emotional-apis/issues"
+  },
+  "homepage": "https://github.com/danniannie/bend-emotional-apis#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1"
+  }
+}
