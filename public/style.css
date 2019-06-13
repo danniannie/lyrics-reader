@@ -1,17 +1,25 @@
 body {
-  background: #005aa7; /* fallback for old browsers */
+  background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #fffde4,
-    #005aa7
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #fffde4,
-    #005aa7
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin: 20px 70px 20px 70px;
   text-align: center;
   font-family: "Lora", serif;
   line-height: 3em;
+}
+.button {
+  padding: 7px;
+  border-radius: 3px;
+  box-shadow: 1.5px 2.5px teal;
 }
