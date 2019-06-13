@@ -3,7 +3,8 @@ const fs = require("fs");
 
 const TextToSpeechV1 = require("ibm-watson/text-to-speech/v1");
 
-const { lyricKey, watsonKey, watsonURL } = require("../config");
+const { lyricKey, watsonKey, watsonURL } =
+  process.env.NODE_ENV === "production" ? process.env : require("../config");
 const axios = require("axios");
 
 function getLyrics(artist, track) {
