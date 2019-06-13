@@ -34,7 +34,7 @@ function getToneAnalysis(lyrics) {
   textToSpeech
     .synthesize(params)
     .then(audio => {
-      audio.pipe(fs.createWriteStream("hello_world1.wav")); //creates the wav file as the data is given as rather than once it's all received
+      audio.pipe(fs.createWriteStream("./public/hello_world1.wav")); //creates the wav file as the data is given rather than once it's all received
     })
     .catch(err => {
       console.log(err);

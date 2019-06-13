@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to Song Reader!</h1>
+    </div>
+    <div>
+      <h3>
+        Pick your favourite song and get the computer to read it for you...
+      </h3>
+    </div>
+    <div>
+      <form method="GET" action="api/music">
+        <p>Artist</p>
+        <input type="text" name="artist" />
+        <p>Track</p>
+        <input type="text" name="track" />
+        <br /><br /><button type="submit">Read me my song!</button>
+      </form>
+    </div>
+  </body>
+</html>

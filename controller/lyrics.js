@@ -12,13 +12,20 @@ function sendToneAnalysis(req, res, next) {
       return lyrics; //returns the lyrics so the next promise can be accessed and so on
     })
     .then(lyrics => {
-      //passed the lyrics to be udedf when getToneAnalysis is invoked
-      return getToneAnalysis(lyrics);
+      //passed the lyrics to be used when getToneAnalysis is invoked
+      return Promise.all([getToneAnalysis(lyrics), lyrics]);
     })
-    .then(result => {
+    .then(([result, lyrics]) => {
       //sends the result back and file is created
-      res.send(result);
+      res.render("song", { result, artist, track, lyrics });
+    })
+    .catch(err => {
+      console.log(err);
     });
 }
 
-module.exports = sendToneAnalysis;
+function getHome(req, res, next) {
+  res.render("home");
+}
+
+module.exports = { sendToneAnalysis, getHome };
