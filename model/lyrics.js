@@ -1,8 +1,5 @@
 const fs = require("fs");
-//MODEL
-
 const TextToSpeechV1 = require("ibm-watson/text-to-speech/v1");
-
 const { lyricKey, watsonKey, watsonURL } =
   process.env.NODE_ENV === "production" ? process.env : require("../config");
 const axios = require("axios");
@@ -14,32 +11,27 @@ function getLyrics(artist, track) {
     )
     .then(({ data }) => {
       return data.result.track.text;
-    })
-    .catch(err => console.log(err));
+    });
 }
 
 function getToneAnalysis(lyrics) {
-  //setting up text to speech function
   const textToSpeech = new TextToSpeechV1({
     version: "2019-02-01",
     iam_apikey: watsonKey,
     url: watsonURL
   });
-  //parameters that are fed into the function
+
   const params = {
     text: lyrics,
     voice: "es-LA_SofiaVoice",
     accept: "audio/wav"
   };
-  //synthesises text to audio and then created wav file
-  textToSpeech
+  return textToSpeech
     .synthesize(params)
     .then(audio => {
-      audio.pipe(fs.createWriteStream("./public/hello_world1.wav")); //creates the wav file as the data is given rather than once it's all received
+      return audio.pipe(fs.createWriteStream("./public/hello_world1.wav"));
     })
-    .catch(err => {
-      console.log(err);
-    });
+    .catch(console.log);
 }
 
 module.exports = { getLyrics, getToneAnalysis };
